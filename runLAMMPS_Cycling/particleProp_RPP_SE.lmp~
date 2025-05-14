@@ -1,0 +1,193 @@
+# Properties for all
+set		atom * sph/rho ${sph_rho}
+#set	        atom * mass ${sph_mass}
+mass 1 ${sph_mass}
+mass 2 ${sph_mass}
+mass 3 ${sph_mass}
+
+# Properties for Liquid particles
+
+set             group liquid d_cA ${sph_cA_init}
+set             group liquid d_dcA 0.0
+
+set             group liquid d_cC ${sph_cA_init}
+set             group liquid d_dcC 0.0
+
+set             group liquid d_mM 0.0
+set             group liquid d_dmM 0.0
+
+set             group liquid d_rR ${sph_rad_init2}
+set             group liquid d_drR 0.0
+
+set             group liquid d_nN 0.0
+set             group liquid d_dnN 0.0
+
+set             group liquid d_local_pot 0.0
+
+set		group liquid d_DA ${sph_DA} # x dir anion diffusion coefficient
+set		group liquid d_DC ${sph_DC} # y dir cation diffusion coefficient
+
+set		group liquid d_muA ${sph_muA} # anion mobility
+set		group liquid d_muC ${sph_muC} # cation mobility
+
+set             group liquid d_surf_energy ${sph_surf_energy2} #surface energy
+
+set		group liquid d_nx 0.0
+set		group liquid d_ny 0.0
+set		group liquid d_nz 0.0
+
+# Properties for Liquid2 particles
+
+set             group liquid2 d_cA ${sph_cA_init}
+set             group liquid2 d_dcA 0.0
+
+set             group liquid2 d_cC ${sph_cA_init}
+set             group liquid2 d_dcC 0.0
+
+set             group liquid2 d_mM 0.0
+set             group liquid2 d_dmM 0.0
+
+set             group liquid2 d_rR ${sph_rad_init3}
+set             group liquid2 d_drR 0.0
+
+set             group liquid2 d_nN 0.0
+set             group liquid2 d_dnN 0.0
+
+set             group liquid2 d_local_pot 0.0
+
+set             group liquid2 d_DA ${sph_DA} # x dir anion diffusion coefficient
+set             group liquid2 d_DC ${sph_DC} # y dir cation diffusion coefficient
+
+set             group liquid2 d_muA ${sph_muA} # anion mobility
+set             group liquid2 d_muC ${sph_muC} # cation mobility
+
+set             group liquid2 d_surf_energy ${sph_surf_energy3} #surface energy
+
+set             group liquid2 d_nx 0.0
+set             group liquid2 d_ny 0.0
+set             group liquid2 d_nz 0.0
+
+
+# Properties for boundary conditions
+
+set 		group constconc d_cC ${sph_const_cC}
+set 		group constconc d_dcC 0.0
+
+set 		group constconc d_cA ${sph_const_cA}
+set 		group constconc d_dcA 0.0
+
+set             group constconc d_mM 0.0
+set             group constconc d_dmM 0.0
+
+set             group constconc d_rR ${sph_rad_init3}
+set             group constconc d_drR 0.0
+
+set             group constconc d_nN 0.0
+set             group constconc d_dnN 0.0
+
+set		group constconc d_DA ${sph_DA} # x dir anion diffusion coefficient
+set		group constconc d_DC ${sph_DC} # x dir cation diffusion coefficient
+
+set		group constconc d_muA ${sph_muA} # anion mobility
+set		group constconc d_muC ${sph_muC} # cation mobility
+
+set             group constconc d_local_pot 0.0
+
+set             group constconc d_surf_energy ${sph_surf_energy3}  # surface energy
+
+set		group constconc d_nx 0.0
+set		group constconc d_ny 0.0
+set		group constconc d_nz 0.0
+
+
+# Set solid particle properties
+
+set             group anode d_cC 0.0
+set             group anode d_dcC 0.0
+
+set             group anode d_cA 0.0
+set             group anode d_dcA 0.0
+
+set             group anode d_mM ${sph_mass_init1}
+set             group anode d_dmM 0.0
+
+set             group anode d_rR ${sph_rad_init}
+set             group anode d_drR 0.0
+
+set            	group anode d_nN 0.0
+set             group anode d_dnN 0.0
+
+set             group anode d_DA ${sph_DA} # x dir anion diffusion coefficient
+set             group anode d_DC ${sph_DC} # x dir cation diffusion coefficient
+
+set             group anode d_muA 0.0 # anion mobility
+set             group anode d_muC 0.0 # cation mobility
+
+set             group anode d_local_pot 0.0
+
+set             group anode d_surf_energy ${sph_surf_energy} # surface energy
+
+set             group anode d_nx 0.0
+set             group anode d_ny 0.0
+set             group anode d_nz 0.0
+
+# Set prot1 particle properties
+
+set             group prot1 d_cC 0.0
+set             group prot1 d_dcC 0.0
+
+set             group prot1 d_cA 0.0
+set             group prot1 d_dcA 0.0
+
+set             group prot1 d_mM ${sph_mass_init1}
+set             group prot1 d_dmM 0.0
+
+set             group prot1 d_rR ${sph_rad_init2}
+set             group prot1 d_drR 0.0
+
+set            	group prot1 d_nN 0.0
+set             group prot1 d_dnN 0.0
+
+set             group prot1 d_DA 0.0 #${sph_DA} # x dir anion diffusion coefficient
+set             group prot1 d_DC 0.0 #${sph_DC} # x dir cation diffusion coefficient
+
+set             group prot1 d_muA 0.0 # anion mobility
+set             group prot1 d_muC 0.0 # cation mobility
+
+set             group prot1 d_local_pot 0.0
+set             group prot1 d_surf_energy ${sph_surf_energy2} # surface energy
+
+set             group prot1 d_nx 0.0
+set             group prot1 d_ny 0.0
+set             group prot1 d_nz 0.0
+
+# Set prot2 particle properties
+
+#set             group prot2 d_cC 0.0
+#set             group prot2 d_dcC 0.0
+
+#set             group prot2 d_cA 0.0
+#set             group prot2 d_dcA 0.0
+
+#set             group prot2 d_mM ${sph_mass_init1}
+#set             group prot2 d_dmM 0.0
+
+#set             group prot2 d_rR ${sph_rad_init2}
+#set             group prot2 d_drR 0.0
+
+#set             group prot2 d_nN 0.0
+#set             group prot2 d_dnN 0.0
+
+#set             group prot2 d_DA 0.0 #${sph_DA} # x dir anion diffusion coefficient
+#set             group prot2 d_DC 0.0 #${sph_DC} # x dir cation diffusion coefficient
+
+#set             group prot2 d_muA 0.0 # anion mobility
+#set             group prot2 d_muC 0.0 # cation mobility
+
+#set             group prot2 d_local_pot 0.0
+
+#set             group prot2 d_RC ${sph_RC2}  # reaction rate
+#set             group prot2 d_surf_energy ${sph_surf_energy2} # surface energy
+#set             group prot2 d_nx 0.0
+#set             group prot2 d_ny 0.0
+#set             group prot2 d_nz 0.0
