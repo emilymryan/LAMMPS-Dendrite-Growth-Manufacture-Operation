@@ -1,0 +1,9 @@
+LAMMPS (2 Apr 2025)
+# Diffusion - Migration - Potential - Nucleation - Reaction Modeling
+# Cycling
+# nucleation equation implementation with nucleation rate
+# 6/8/23
+# Madison Morey
+
+log 		${dname}/log.lammps
+log 		/projectnb/ryanlab/mmorey/SPH_Paper/newresults/Case3_17April_UpdateTest_4012023/log.lammps
