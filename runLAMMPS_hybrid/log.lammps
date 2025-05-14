@@ -1,9 +1,0 @@
-LAMMPS (8 Apr 2021)
-# Diffusion - Migration - Potential - Nucleation - Reaction Modeling
-# Cycling
-# nucleation equation implementation with nucleation rate
-# 6/8/23
-# Madison Morey
-
-log 		${dname}/log.lammps
-log 		/projectnb/ryanlab/mmorey/CMESPaper/results/Case4/Case4_20Aug24_polymerrich_D0.01_9428720/log.lammps
